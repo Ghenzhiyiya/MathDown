@@ -1,0 +1,51 @@
+{
+  "name": "mathdown",
+  "version": "2.0.0",
+  "description": "一个由精神状态不正常的开发者创建的数学规律占卜系统，支持彩票预测、股票占卜、神经网络、黄金分割、随机数生成等娱乐功能",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-deps": "npm install",
+    "backup": "node -e \"const {SQLiteManager} = require('./src/database/sqlite_manager'); const db = new SQLiteManager(); db.connect().then(() => db.backup()).then(console.log).catch(console.error);\""
+  },
+  "keywords": [
+    "math",
+    "prediction",
+    "machine-learning",
+    "convolution",
+    "fourier",
+    "nearest-neighbor",
+    "divination",
+    "占卜",
+    "lottery",
+    "stock",
+    "neural-network",
+    "golden-ratio",
+    "random",
+    "sqlite",
+    "entertainment",
+    "chaos",
+    "fibonacci"
+  ],
+  "author": "一个精神状态不正常的开发者 😵‍💫",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "mathjs": "^11.11.0",
+    "sqlite3": "^5.1.6",
+    "axios": "^1.6.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crazy-developer/mathdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crazy-developer/mathdown/issues"
+  },
+  "homepage": "https://github.com/crazy-developer/mathdown#readme"
+}
